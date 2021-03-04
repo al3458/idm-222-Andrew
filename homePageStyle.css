@@ -1,8 +1,37 @@
 body {
-    background-color: seagreen;
+    text-align: left;
+    background-color: #292929;
+    color: #f2f2f2;
 }
 
-.nav {
-    display: block;
-    display: inline-block;
+.aboutHome {
+    float: left;
+    display: flex;
+    background-color: rgb(249, 163, 4);
+}
+
+/* .tiktokHead {
+    border-radius: 50%;
+} */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1f1e1e;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #f26419;
+    color: white;
 }
