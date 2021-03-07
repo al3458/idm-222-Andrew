@@ -7,6 +7,7 @@ body {
 .resume {
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 125%;
 }
 
 .title,
@@ -20,7 +21,6 @@ h2 {
     overflow: hidden;
 }
 
-
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -28,4 +28,15 @@ h2 {
     padding: 16px 16px;
     text-decoration: none;
     font-size: 30px;
+}
+
+/* media stuff */
+@media screen and (max-width: 800px) {
+    .topnav a {
+        font-size: 5vw;
+    }
+
+    .resume {
+        font-size: 100%;
+    }
 }

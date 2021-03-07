@@ -4,27 +4,39 @@ body {
     color: #f2f2f2;
 }
 
+@font-face {
+    font-family: Lobster;
+    src: url(Lobster-Regular.ttf);
+}
+
 .headers {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     background-image: url(background1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
 }
 
+#twitchLink {
+    max-width: 5%;
+    height: 1%;
+}
+
 #firstH1 {
     margin: 0px;
+    font-family: 'Lobster';
 }
 
 #secondH1 {
     color: rgb(244, 160, 4);
     text-align: center;
-    margin: 20px;
+    margin: 2%;
     font-size: 50px;
 }
 
 #firstH3 {
+    font-family: 'Lobster';
     padding-bottom: 10px;
 }
 
@@ -65,15 +77,14 @@ body {
     align-self: flex-end;
 }
 
-@media screen and (max-width: 800px) {
-    .aboutHome {
-        flex-direction: column;
-    }
-
-    .tiktokHead {
-        align-self: center;
-        margin: 0px;
-    }
+/* footer */
+.footer {
+    /* background-color: rgb(244, 160, 4); */
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
 }
 
 /* Navigation */
@@ -107,5 +118,38 @@ body {
 
     #secondH1 {
         font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutHome {
+        flex-direction: column;
+    }
+
+    .tiktokHead {
+        align-self: center;
+        margin: 0px;
+    }
+
+    .projects {
+        background-image: url(WorksBackgroundMobile.jpg);
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 30px;
+    }
+
+    #AmericanDream,
+    #portrait,
+    #Marvel {
+        align-self: center;
+    }
+
+    #twitchLink,
+    #YoutubeLink {
+        width: auto;
+        height: 35px;
     }
 }
