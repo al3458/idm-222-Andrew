@@ -4,34 +4,108 @@ body {
     color: #f2f2f2;
 }
 
+.headers {
+    text-align: center;
+    font-size: 50px;
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#firstH1 {
+    margin: 0px;
+}
+
+#secondH1 {
+    color: rgb(244, 160, 4);
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+
+#firstH3 {
+    padding-bottom: 10px;
+}
+
 .aboutHome {
     float: left;
     display: flex;
-    background-color: rgb(249, 163, 4);
+    margin: 20px;
+    /* background-color: rgb(244, 160, 4); */
 }
 
-/* .tiktokHead {
-    border-radius: 50%;
-} */
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin: 10px;
+    align-items: center;
+}
 
-/* Add a black background color to the top navigation */
+.tiktokHead {
+    border-radius: 50%;
+}
+
+.projectParent {
+    background-image: url(WorksBackground.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 30px;
+}
+
+#AmericanDream {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutHome {
+        flex-direction: column;
+    }
+
+    .tiktokHead {
+        align-self: center;
+        margin: 0px;
+    }
+}
+
+/* Navigation */
 .topnav {
-    background-color: #1f1e1e;
+    background-color: transparent;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+.toplink {
+    float: right;
+}
+
 .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #f26419;
-    color: white;
+/* font size media stuff */
+@media screen and (max-width: 800px) {
+    .topnav a {
+        font-size: 5vw;
+    }
+
+    .headers {
+        font-size: 7vw;
+    }
+
+    #secondH1 {
+        font-size: 7vw;
+    }
 }

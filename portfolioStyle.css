@@ -1,8 +1,24 @@
 body {
+    text-align: left;
     background-color: #292929;
+    color: white;
 }
 
 .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 3rem 1rem 1rem;
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 3rem 1rem 1rem;
+}
+
+.gallery3 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
@@ -14,24 +30,17 @@ body {
     height: auto;
 }
 
-/* Add a black background color to the top navigation */
+/* Navigation */
 .topnav {
-    background-color: #1f1e1e;
+    background-color: rgb(244, 160, 4);
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 20px;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #f26419;
-    color: white;
+    font-size: 34px;
 }
