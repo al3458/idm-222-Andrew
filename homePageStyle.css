@@ -2,6 +2,12 @@ body {
     text-align: left;
     background-color: #292929;
     color: #f2f2f2;
+    font-family: Hug;
+}
+
+@font-face {
+    font-family: Hug;
+    src: url(Hug_Me_Tight.ttf);
 }
 
 @font-face {
@@ -9,7 +15,7 @@ body {
     src: url(Lobster-Regular.ttf);
 }
 
-.headers {
+header {
     text-align: center;
     font-size: 3rem;
     background-image: url(background1.jpg);
@@ -44,6 +50,7 @@ body {
     float: left;
     display: flex;
     margin: 20px;
+    letter-spacing: 2px;
     /* background-color: rgb(244, 160, 4); */
 }
 
@@ -52,7 +59,7 @@ body {
     flex-direction: column;
     font-size: 24px;
     margin: 10px;
-    align-items: center;
+    align-items: left;
 }
 
 .tiktokHead {
@@ -70,19 +77,37 @@ body {
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
-    padding-top: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+button {
+    border: none;
+    box-shadow: 7px 10px #292929;
 }
 
 #AmericanDream {
     align-self: flex-end;
 }
 
+#portrait,
+#AmericanDream {
+    float: left;
+    margin: 0.5%;
+}
+
+#portText,
+#AmericanText {
+    text-align: center;
+    color: #f2f2f2;
+}
+
 /* footer */
-.footer {
+footer {
     /* background-color: rgb(244, 160, 4); */
     text-align: center;
-    margin-top: 0px;
-    margin: 0px;
+    margin: 2%;
+    /* margin: 0px; */
     padding: 0px;
     font-size: 20px;
 }
@@ -93,8 +118,8 @@ body {
     overflow: hidden;
 }
 
-.toplink {
-    float: right;
+.topnav a:hover {
+    background-color: rgb(244, 160, 4);
 }
 
 .topnav a {
@@ -145,11 +170,5 @@ body {
     #portrait,
     #Marvel {
         align-self: center;
-    }
-
-    #twitchLink,
-    #YoutubeLink {
-        width: auto;
-        height: 35px;
     }
 }

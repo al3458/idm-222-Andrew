@@ -2,6 +2,12 @@ body {
     text-align: left;
     background-color: #292929;
     color: #f2f2f2;
+    font-family: Hug;
+}
+
+@font-face {
+    font-family: Hug;
+    src: url(Hug_Me_Tight.ttf);
 }
 
 .resume {
@@ -19,6 +25,11 @@ h2 {
 .topnav {
     background-color: rgb(244, 160, 4);
     overflow: hidden;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: rgb(244, 160, 4);
 }
 
 .topnav a {
