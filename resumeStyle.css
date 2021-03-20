@@ -3,6 +3,7 @@ body {
     background-color: #292929;
     color: #f2f2f2;
     font-family: Hug;
+    max-width: 1440px;
 }
 
 @font-face {

@@ -5,31 +5,173 @@ body {
     font-family: Hug;
 }
 
+#wide {
+    max-width: 1600px;
+}
+
+h1 {
+    background-color: rgb(244, 160, 4);
+    font-size: 3vw;
+}
+
 @font-face {
     font-family: Hug;
     src: url(Hug_Me_Tight.ttf);
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-gap: 1em;
-    padding: 3rem 1rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1600px;
 }
+
+#firstImg,
+#thirdImg,
+#fifthImg {
+    display: flex;
+    color: rgb(244, 160, 4);
+    font-size: 24px;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+
+#secondImg,
+#fourthImg {
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(244, 160, 4);
+    font-size: 24px;
+    width: 100%;
+    margin: 10px;
+    background-color: #2f2f2f;
+    align-items: center;
+}
+
+
+/* text for images */
+#firstImg p,
+#thirdImg p,
+#fifthImg p {
+    max-width: 650px;
+    padding-left: 5%;
+}
+
+#secondImg p,
+#fourthImg p {
+    max-width: 650px;
+    padding-right: 5%;
+}
+
+.gallery img {
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+
+
 
 .gallery2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-gap: 1em;
-    padding: 3rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1600px;
 }
 
-.gallery3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-gap: 1em;
-    padding: 3rem 1rem 1rem;
+.gallery2 img {
+    max-width: 400px;
+    height: auto;
 }
+
+#firstPhoto,
+#thirdPhoto,
+#fifthPhoto,
+#seventhPhoto {
+    display: flex;
+    color: rgb(244, 160, 4);
+    font-size: 24px;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+
+#secondPhoto,
+#fourthPhoto,
+#sixthPhoto {
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(244, 160, 4);
+    font-size: 24px;
+    width: 100%;
+    margin: 10px;
+    background-color: #2f2f2f;
+    align-items: center;
+}
+
+#firstPhoto p,
+#thirdPhoto p,
+#fifthPhoto p,
+#seventhPhoto p {
+    max-width: 650px;
+    padding-left: 5%;
+}
+
+#secondPhoto p,
+#fourthPhoto p,
+#sixthPhoto p {
+    max-width: 650px;
+    padding-right: 5%;
+}
+
+
+
+.gallery3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1600px;
+}
+
+.gallery3 img {
+    max-width: 400px;
+    height: auto;
+}
+
+#marvel {
+    display: flex;
+    color: rgb(244, 160, 4);
+    font-size: 24px;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+
+#americana {
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(244, 160, 4);
+    font-size: 24px;
+    width: 100%;
+    margin: 10px;
+    background-color: #2f2f2f;
+    align-items: center;
+}
+
+#marvel p {
+    max-width: 650px;
+    padding-left: 5%;
+}
+
+#americana p {
+    max-width: 650px;
+    padding-right: 5%;
+}
+
+
+
 
 .art {
     width: 100%;
@@ -59,5 +201,65 @@ h1 {
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 34px;
+}
+
+
+/* media stuff */
+@media screen and (max-width:800px) {
+
+    .topnav a {
+        font-size: 5vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    #firstImg,
+    #thirdImg,
+    #fifthImg,
+    #secondImg,
+    #fourthImg {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .art {
+        margin: 10px;
+    }
+
+    #firstPhoto,
+    #thirdPhoto,
+    #fifthPhoto,
+    #seventhPhoto,
+    #secondPhoto,
+    #fourthPhoto,
+    #sixthPhoto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #marvel,
+    #americana {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1601px) {
+    body {
+        text-align: left;
+        background-color: rgb(244, 160, 4);
+        color: white;
+        font-family: Hug;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #wide {
+        background-color: #292929;
+    }
 }
